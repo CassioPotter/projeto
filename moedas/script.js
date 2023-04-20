@@ -8,3 +8,7 @@ function btnVal() {
 
     outDol.innerHTML = "R$ 4,99"
 }
+
+function btnEnter() {
+    
+}
