@@ -1,0 +1,19 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    background: rgb(93, 231, 93);
+}
+
+#principal{
+    border: solid 5px black;
+    width: 400px;
+    border-radius: 25px;
+}
+
+#btn{
+    border-radius: 15px;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+}
