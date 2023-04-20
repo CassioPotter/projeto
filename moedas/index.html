@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOEDAS</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div>
+    <div id="principal" onload="carregou()">
         <h1>
             Valores das moedas
         </h1>
@@ -27,7 +28,8 @@
             BITCOIN
         </h2>
         <div id="outBit"></div>
+        <input type="button" value="CARREGAR VALORES" onclick="btnVal()" id="btn">
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
