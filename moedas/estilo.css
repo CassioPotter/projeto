@@ -2,6 +2,7 @@
     margin: 5px;
     padding: 5px;
     background: rgb(93, 231, 93);
+    
 }
 
 #principal{
@@ -9,6 +10,8 @@
     width: 400px;
     border-radius: 25px;
     height: 500px;
+    line-height: 25px;
+   
 }
 
 #btn{
