@@ -27,6 +27,14 @@ h1{
     text-align: right;
     padding: 5px;
     
+    
+}
+img:hover{
+    transform: scale(2);
+}
+a:hover{
+    background-color: black;
+    color: aliceblue;
 }
 
 td{
