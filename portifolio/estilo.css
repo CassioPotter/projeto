@@ -9,9 +9,10 @@ body{
     
 }
 #total{
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 550px;
     border:  solid 5px black;
+    border-radius: 30px;
     padding: 5px;
     background-image: linear-gradient(to left, white, grey);
 }
