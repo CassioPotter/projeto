@@ -33,6 +33,10 @@ td{
     
     
 }
+img{
+    width: 150px;
+    height: 200px;
+}
 header{
     background-image: linear-gradient(to left, white, grey);
     
