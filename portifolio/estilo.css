@@ -31,7 +31,7 @@ h1{
 }
 img:hover{
     object-position: 40px;
-    transform: scale(2.5);
+    transform: scale(2);
     transition: 1s;
     
 }
