@@ -30,12 +30,15 @@ h1{
     
 }
 img:hover{
+    object-position: 40px;
     transform: scale(2.5);
-    align-items: center;
+    transition: 1s;
+    
 }
 #menu:hover{
     background-color: black;
     color: aliceblue;
+    left: 25%;
 }
 
 td{
@@ -45,6 +48,8 @@ td{
 img{
     width: 150px;
     height: 200px;
+    
+   
 }
 header{
     background-image: linear-gradient(to left, white, grey);
