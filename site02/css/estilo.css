@@ -5,3 +5,8 @@ body{
     background-attachment: fixed;
 
 }
+
+nav.navbar-transparente{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0px;
+}
