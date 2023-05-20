@@ -1,0 +1,81 @@
+/* limpar formatação padrão*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    background: grey;
+}
+#principal{
+    background: white;
+    width: 940px;
+    margin: 0 auto;
+    
+}
+#cabeça{
+    background: orange;
+    padding: 15px;
+    text-align: center;
+}
+#logo{
+    padding: 10px;
+}
+#menu{
+    padding: 10px;
+}
+h1{
+    color:rgb(48, 47, 47) ;
+    font: size 2.5em; ;
+}
+#branco{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+    background: white;
+}
+#postagem{
+    width: 660px;
+    background: white;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#lateral{
+    width: 240px;
+    background: orangered;
+    float: right;
+}
+#roda{
+    background: #ccc;
+    width: 920px;
+    border: 1px solid;
+    margin: 0 auto;   
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}
+.nao{
+    color: blue;
+}
+.post{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+h2{
+    color: orange;
+}
+.dt{
+    font-size: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+    
+}
