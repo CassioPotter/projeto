@@ -50,6 +50,9 @@ body {
 	top: 0;
 	width: 100%;
 }
+a{
+	color: white;
+}
 
 #navbar .navbar-container {
 	width: 60%;
@@ -65,12 +68,12 @@ body {
 	font-weight: bold;
 }
 
-#navbar .navbar-container ul li {
+#navbar .navbar-container a {
 	padding: 0 20px;
 	transition: all 300ms ease;
 }
 
-#navbar .navbar-container ul li:hover {
+#navbar .navbar-container a:hover {
 	color: #1db954;
 	cursor: pointer;
 }
