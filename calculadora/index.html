@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    .fundo
+    {
+        background: linear-gradient(45deg, black, crimson );/*degrade*/
+        height: 100vh;
+        color: white;
+        font-family: arial;
+        text-align: center;
+    }
+
+    .calculadora
+    {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);/*transparencia*/
+        top: 50%;/* coloca no meio da pagina*/
+        left: 50%;
+        transform: translate(-50%, -50%);/*coloca o centro da box como centro da tela*/
+        border-radius: 15px; /* borda arredondada */
+        padding: 15px;/*distancia entre os elementos e borda*/
+    }
+
+    .botao
+    {
+        width: 50px;/*altura*/
+        height: 50px;/*largura*/
+        font-size: 25px;/*tamanho da fonta*/
+        cursor: pointer;/*muda o cursor;*/
+        background: rgb(43, 32, 32);
+        color: white;
+        margin: 3px;
+        border-radius: 15px;
+    }
+
+    .botao:hover
+    {/*passa por cima*/
+        background: rgb(97, 97, 126);
+    }
+
+    .botao:active
+    {/*clica*/
+        background: blue;
+
+    }
+
+    #resultado
+    {
+        width: 220px;/*altura*/
+        height: 30px;/*largura*/
+        margin: 5px;
+        background: white;
+        font-size: 25px;
+        color: black;
+        text-align: right;
+        padding: 5px;
+    }
+
+</style>
+
+
+
+
+
+<body>
+    <div class="fundo">
+        <h1>
+            BY POTTER
+        </h1>
+        <div class="calculadora">
+            <h1>
+                calculadora
+            </h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="limpa()">AC</button></td>
+                    <td><button class="botao" onclick="apagar()"><</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button ></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert(7)">7</button></td>
+                    <td><button class="botao" onclick="insert(8)">8</button></td>
+                    <td><button class="botao" onclick="insert(9)">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert(4)">4</button></td>
+                    <td><button class="botao" onclick="insert(5)">5</button></td>
+                    <td><button class="botao" onclick="insert(6)">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao"  onclick="insert(1)">1</button></td>
+                    <td><button class="botao" onclick="insert(2)">2</button></td>
+                    <td><button class="botao" onclick="insert(3)">3</button></td>
+                    <td rowspan="2" ><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert(0)">0</button></td>
+                    <td><button class="botao" onclick="insert(',')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script>
+        function insert(num)
+        {
+            window.document.getElementById('resultado').innerHTML += num;
+        }
+        function limpa()
+        {
+            window.document.getElementById('resultado').innerHTML = " "
+        }
+        function apagar()
+        {
+            var resultado = window.document.getElementById('resultado').innerHTML
+            window.document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1)
+        }
+        function calcular()
+        {
+            var resultado = window.document.getElementById('resultado').innerHTML
+            if (resultado)
+            {
+                window.document.getElementById('resultado').innerHTML = eval(resultado)
+            }
+            else
+            {
+                window.document.getElementById('resultado').innerHTML = "nada para calcular"
+            }
+        }
+    </script>
+    
+</body>
+</html>
