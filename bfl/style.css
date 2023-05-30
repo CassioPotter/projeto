@@ -87,6 +87,7 @@ a{
 /* Showcase */
 #showcase {
 	height: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -103,7 +104,7 @@ a{
 }
 
 #showcase .showcase-container h2 {
-	font-size: 5rem;
+	font-size: 7vw;
 }
 
 #showcase .showcase-container p {
@@ -113,15 +114,16 @@ a{
 
 /* Footer */
 #footer {
+	width: 100vw;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	padding:60px 0;
-	background-size: 100vw;/*teste barra inferior*/
+	/*teste barra inferior*/
 }
 
 #footer .footer-content {
 	display: flex;
-	width: 100%;
+	width: 100vw;
 	margin: auto;
 	justify-content: space-evenly;
 }
@@ -214,4 +216,11 @@ a{
 	width: auto;
 	display: inline-block;
 	margin-left: 10px;
+}
+
+.zueira{
+	text-align: center;
+	font-size: 5vw;
+	color: black;
+	text-shadow: 2px 2px 2px #ff4169;
 }
