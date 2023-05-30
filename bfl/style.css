@@ -10,12 +10,13 @@
 }
 
 body {
-	background:url(img/capa.png),
+	background:url(img/teste4.png),
     url(img/ruido.png),
     linear-gradient(50deg, #ff4169,#7c26f8);
     background-attachment: fixed;
+	background-size: 100px;
     font-family:  Helvetica, Arial, sans-serif;
-}
+	}
 
 /* Utility Classes */
 .btn-primary {
@@ -112,7 +113,7 @@ a{
 
 /* Footer */
 #footer {
-	background: black;
+	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	padding:60px 0;
 }
