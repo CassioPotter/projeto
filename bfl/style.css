@@ -116,6 +116,7 @@ a{
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	padding:60px 0;
+	background-size: 100vw;/*teste barra inferior*/
 }
 
 #footer .footer-content {
