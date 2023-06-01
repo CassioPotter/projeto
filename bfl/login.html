@@ -1,168 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Login</title>
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-	</head>
-	<body>
-		<!-- Navbar -->
-		<navbar id="navbar">
-			<div class="navbar-container">
-				<img src="img/bflredondo.png" alt="" class="logo" />
-				<ul class="navbar-items">
-					<li class="navbar-item">
-						<a href="index.html" target="_blank">
-							Home
-						</a>
-					</li>
-					<li class="navbar-item">
-						<a href="ajuda.html" target="_blank">
-							Ajuda
-						</a>
-					</li>
-					<li class="navbar-item">
 
-					</li>
-					<li class="navbar-item">
-						<a href="contato.html" target="_blank">
-							Inscrever
-						</a>
-					</li>
-					<li class="navbar-item">
-						<a href="login.html" target="_blank">
-							Entrar
-						</a>
-					</li>
-				</ul>
-			</div>
-		</navbar>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<title>Login</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<script src="script.js"></script>
+</head>
 
-		<!-- Showcase -->
-		<div id="showcase">
-			<div class="showcase-container">
-				<h2>Academia para todos - BFL</h2>
-				<p>
-					Milhões de aparelhos à sua escolha. E nem precisa de cartão de crédito.
-				</p>
-				<button class="btn-primary">Obtenha uma aula Free</button>
+<body>
+	<!-- Navbar -->
+	<navbar id="navbar">
+		<div class="navbar-container">
+			<img src="img/bflredondo.png" alt="" class="logo" />
+			<ul class="navbar-items">
+				<li class="navbar-item">
+					<a href="index.html" target="_blank">
+						Home
+					</a>
+				</li>
+				<li class="navbar-item">
+					<a href="ajuda.html" target="_blank">
+						Ajuda
+					</a>
+				</li>
+				<li class="navbar-item">
+
+				</li>
+				<li class="navbar-item">
+					<a href="contato.html" target="_blank">
+						Inscrever
+					</a>
+				</li>
+				<li class="navbar-item">
+					<a href="login.html" target="_blank">
+						Entrar
+					</a>
+				</li>
+			</ul>
+		</div>
+	</navbar>
+
+	<!-- Showcase -->
+	<div id="showcase" class="zueira">
+		<div class="showcase-container">
+			<h2>Academia para todos - BFL</h2>
+			<p>
+				Por favor digite seu nome.
+			</p>
+			<input type="text" name="nome" id="inNome">
+			<p>
+				Por favor digite sua senha.
+			</p>
+			<input type="password" name="senha" id="inSenha">
+			<br>
+			<button class="btn-primary" onclick="btnLogin()"> LOGIN </button>
+			<div id="outRes"></div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="footer-content">
+
+
+
+			<ul class="footer-menu">
+				<p>Comunidades</p>
+				<li class="footer-menu-item">
+					<a href="paraartista.html" target="_blank">
+						Para Artistas
+					</a>
+				</li>
+				<li class="footer-menu-item">
+					<a href="desemvolvedores.html" target="_blank">
+						Desenvolvedores
+					</a>
+				</li>
+				<li class="footer-menu-item">
+					<a href="marcas.html" target="_blank">
+						Marcas
+					</a>
+				</li>
+				<li class="footer-menu-item">
+					<a href="investidores.html" target="_blank">
+						Investidores
+					</a>
+				</li>
+				<li class="footer-menu-item">
+					<a href="fornecedores.html" target="_blank">
+						Fornecedores
+					</a>
+				</li>
+			</ul>
+
+			<ul class="footer-menu">
+				<p>Links úteis</p>
+				<li class="footer-menu-item">
+					<a href="ajuda.html" target="_blank">
+						Ajuda
+					</a>
+				</li>
+				<li class="footer-menu-item">
+					<a href="playerdaweb.html" target="_blank">
+						Player da Web
+					</a>
+				</li>
+				<li class="footer-menu-item">
+
+				</li>
+			</ul>
+
+			<div class="socials">
+				<a href="https://www.instagram.com/academiabflcanoas/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://twitter.com/" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://pt-br.facebook.com/" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
 			</div>
 		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="footer-content">
-				
-			
-
-				<ul class="footer-menu">
-					<p>Comunidades</p>
-					<li class="footer-menu-item">
-						<a href="paraartista.html" target="_blank">
-							Para Artistas
-						</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="desemvolvedores.html" target="_blank">
-							Desenvolvedores
-						</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="marcas.html" target="_blank">
-							Marcas
-						</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="investidores.html" target="_blank">
-							Investidores
-						</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="fornecedores.html" target="_blank">
-							Fornecedores
-						</a>
-					</li>
-				</ul>
-
-				<ul class="footer-menu">
-					<p>Links úteis</p>
-					<li class="footer-menu-item">
-						<a href="ajuda.html" target="_blank">
-							Ajuda
-						</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="playerdaweb.html" target="_blank">
-							Player da Web
-						</a>
-					</li>
-					<li class="footer-menu-item">
-						
-					</li>
-				</ul>
-
-				<div class="socials">
-					<a href="https://www.instagram.com/academiabflcanoas/" target="_blank">
-						<i class="fab fa-instagram"></i>
+		<div class="footer-info">
+			<ul class="footer-info-items">
+				<li class="footer-info-item">
+					<a href="legal.html">
+						Legal
 					</a>
-					<a href="https://twitter.com/" target="_blank">
-						<i class="fab fa-twitter"></i>
+
+				</li>
+				<li class="footer-info-item">
+					<a href="centrodeprivacidade.html">
+						Centro de Privacidade
 					</a>
-					<a href="https://pt-br.facebook.com/" target="_blank">
-						<i class="fab fa-facebook-f"></i>
+				</li>
+				<li class="footer-info-item">
+					<a href="politicadeprivacidade.html">
+						Política de privacidade
 					</a>
+				</li>
+				<li class="footer-info-item">
+					<a href="cookies.html">
+						Cookies
+					</a>
+				</li>
+				<li class="footer-info-item">
+					<a href="sobreanuncios.html">
+						Sobre anúncios
+					</a>
+				</li>
+			</ul>
+
+			<div class="rights">
+				<div class="country">
+					<p>Brasil</p>
+					<img src="img/brazil.png" alt="" class="brazil-flag" />
 				</div>
+				<p>&copy; 2023 Academia BFL</p>
 			</div>
-			<div class="footer-info">
-				<ul class="footer-info-items">
-					<li class="footer-info-item">
-						<a href="legal.html">
-							Legal
-						</a>
+		</div>
+	</footer>
 
-					</li>
-					<li class="footer-info-item">
-						<a href="centrodeprivacidade.html">
-							Centro de Privacidade
-						</a>
-					</li>
-					<li class="footer-info-item">
-						<a href="politicadeprivacidade.html">
-							Política de privacidade
-						</a>
-					</li>
-					<li class="footer-info-item">
-						<a href="cookies.html">
-							Cookies
-						</a>
-					</li>
-					<li class="footer-info-item">
-						<a href="sobreanuncios.html">
-							Sobre anúncios
-						</a>
-					</li>
-				</ul>
+	<!-- Scripts -->
+	<script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+</body>
 
-				<div class="rights">
-					<div class="country">
-						<p>Brasil</p>
-						<img src="img/brazil.png" alt="" class="brazil-flag" />
-					</div>
-					<p>&copy; 2023 Academia BFL</p>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Scripts -->
-		<script
-			src="https://kit.fontawesome.com/f9e19193d6.js"
-			crossorigin="anonymous"
-		></script>
-	</body>
 </html>
