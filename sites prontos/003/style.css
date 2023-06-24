@@ -1,0 +1,29 @@
+*{
+    font-family: sans-serif;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid black;
+}
+.topo{
+    display: grid;
+    grid-template-columns: 10vw auto;
+}
+.imagem{
+    font-size: 2vw;
+}
+aside{
+    height: 70vh;
+    
+}
+.menu{
+    display: grid;
+    grid-template-columns: auto;
+}
+.principal{
+    display: grid;
+    grid-template-columns: auto 20vw;
+}
+.rodape{
+    display: grid;
+    grid-template-columns: auto;
+}
